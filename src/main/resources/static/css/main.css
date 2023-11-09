@@ -1,0 +1,25 @@
+/*Navbar Styling*/
+
+.navbar-container {
+    background-color: #506456;
+    width: 100%;
+    height: 20vh;
+    justify-items: center;
+}
+
+.navbar-links a {
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    justify-items: center;
+    justify-content: space-between;
+}
+.navbar-links a :hover {
+    color: #4D8B62
+}
+.navbar-links #navbar-call {
+    color: white;
+    border: #4D8B62;
+    background-color: #4D8B62;
+}
