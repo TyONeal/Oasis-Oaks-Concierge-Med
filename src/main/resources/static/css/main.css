@@ -4,16 +4,19 @@
     background-color: #506456;
     width: 100%;
     height: 20vh;
-    justify-items: center;
+    justify-content: end;
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
 }
 
 .navbar-links a {
     color: white;
-    line-height: 50px;
-    text-align: center;
-    float: left;
-    justify-items: center;
-    justify-content: space-between;
+    font-size: large;
+    font-family: Arial, serif;
+    font-weight: 200;
+    padding: 30px 50px;
+    text-decoration: unset;
 }
 .navbar-links a :hover {
     color: #4D8B62
@@ -22,4 +25,12 @@
     color: white;
     border: #4D8B62;
     background-color: #4D8B62;
+    padding: 15px;
+    background-size: 10px;
+    font-weight: 200;
+}
+
+#navbar-logo {
+    height: 20vh;
+    width: 12vw;
 }
