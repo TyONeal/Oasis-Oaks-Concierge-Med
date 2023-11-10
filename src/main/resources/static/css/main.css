@@ -1,3 +1,5 @@
+
+
 /*Navbar Styling*/
 
 .navbar-container {
@@ -8,29 +10,98 @@
     display: flex;
     align-items: center;
     padding-right: 100px;
+    flex-direction: row;
 }
 
 .navbar-links a {
-    color: white;
-    font-size: large;
-    font-family: Arial, serif;
-    font-weight: 200;
-    padding: 30px 50px;
-    text-decoration: unset;
+    display: none;
 }
-.navbar-links a :hover {
-    color: #4D8B62
-}
+
 .navbar-links #navbar-call {
-    color: white;
+    color: whitesmoke;
     border: #4D8B62;
     background-color: #4D8B62;
     padding: 15px;
     background-size: 10px;
     font-weight: 200;
+    font-size: medium;
 }
 
-#navbar-logo {
+.navbar-icon {
+    display: block;
+}
+
+.navbar-logo {
     height: 20vh;
     width: 12vw;
+    float: left;
+    margin-right: 187px;
+}
+
+/*Hero Container Styling*/
+
+.hero-container {
+    background-image: url("/static/img/hero-bg.webp");
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Media Queries*/
+
+@media (min-width: 475px) {
+    .container {
+        max-width: 475px;
+    }
+}
+
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+    .navbar-links a {
+        color: whitesmoke;
+        font-family: "Roboto Thin", sans-serif;
+        font-size: large;
+        font-weight: 100;
+        padding: 30px 50px;
+        text-decoration: unset;
+    }
+    .navbar-links a:hover {
+        color: #ABCCB7;
+    }
+    .navbar-icon {
+        display: none;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .container {
+        max-width: 1536px;
+    }
 }
