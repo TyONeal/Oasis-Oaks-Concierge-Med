@@ -7,6 +7,8 @@
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    padding: unset;
+    margin: unset;
 }
 
 /*
@@ -47,6 +49,7 @@
     padding: 0 20px;
 
 }
+/* Combo classes to extend the row's versatility */
 
 .row.full-width {
     max-width: unset;
@@ -79,7 +82,6 @@
 .row.grow {
     flex: 1 0 0;
 }
-/* Combo classes to extend the row's versatility */
 
 /*
     The "column" is a container element that vertically separates its
@@ -165,8 +167,6 @@
 .d-flex.full-width {
     width: 100%;
 }
-
-
 
 
 /*
