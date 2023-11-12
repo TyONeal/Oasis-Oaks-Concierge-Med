@@ -42,6 +42,7 @@
 
 .hero-container {
     background-image: url("/static/img/hero-bg.webp");
+    background-size: cover;
 }
 
 
