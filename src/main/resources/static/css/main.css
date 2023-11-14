@@ -4,13 +4,15 @@
 
 .navbar-container {
     background-color: #506456;
-    width: 100%;
-    height: 20vh;
-    justify-content: end;
+    height: 23vh;
     display: flex;
-    align-items: center;
-    padding-right: 100px;
-    flex-direction: row;
+    justify-content: space-between;
+    padding: unset;
+    margin: unset;
+}
+.navbar-links {
+    display: flex;
+    float: right;
 }
 
 .navbar-links a {
@@ -21,27 +23,28 @@
     color: whitesmoke;
     border: #4D8B62;
     background-color: #4D8B62;
-    padding: 15px;
+    padding: 15px 20px;
     background-size: 10px;
     font-weight: 200;
-    font-size: medium;
+    font-size: small;
 }
 
 .navbar-icon {
     display: block;
 }
 
-.navbar-logo {
-    height: 20vh;
-    width: 12vw;
+.navbar-container img {
+    max-height: 24vh;
+    max-width: 100%;
     float: left;
-    margin-right: 187px;
+    object-fit: cover;
+    padding-left: 110px;
 }
 
 /*Hero Container Styling*/
 
 .hero-container {
-    background-image: url("/static/img/hero-bg.webp");
+    background-image: url("/static/img/oasis-oaks-concierge-med-bg.webp");
     background-size: cover;
 }
 
@@ -59,50 +62,65 @@
 
 @media (min-width: 475px) {
     .container {
-        max-width: 475px;
+        min-width: 475px;
+    }
+    .navbar-icon {
+        display: block;
     }
 }
 
 @media (min-width: 640px) {
     .container {
-        max-width: 640px;
+        min-width: 640px;
     }
 }
 
 @media (min-width: 768px) {
     .container {
-        max-width: 768px;
+        min-width: 768px;
     }
-}
-
-@media (min-width: 1024px) {
-    .container {
-        max-width: 1024px;
+    .navbar-links {
+        gap: 40px;
+        align-items: center;
     }
     .navbar-links a {
+        display: flex;
+        flex-direction: row;
         color: whitesmoke;
         font-family: "Roboto Thin", sans-serif;
         font-size: large;
         font-weight: 100;
-        padding: 30px 50px;
+        justify-items: right;
         text-decoration: unset;
+        padding-right: 50px;
     }
+
     .navbar-links a:hover {
         color: #ABCCB7;
+    }
+    .navbar-links #navbar-call {
+        margin-right: 50px;
     }
     .navbar-icon {
         display: none;
     }
 }
 
+@media (min-width: 1024px) {
+    .container {
+        min-width: 1024px;
+        flex-direction: row;
+    }
+}
+
 @media (min-width: 1280px) {
     .container {
-        max-width: 1280px;
+        min-width: 1280px;
     }
 }
 
 @media (min-width: 1536px) {
     .container {
-        max-width: 1536px;
+        min-width: 1536px;
     }
 }
